@@ -1,0 +1,94 @@
+/* Definindo variáveis para os temas */
+:root {
+    /* Tema Claro (caso não haja tema escuro ativo) */
+    --cor-fundo: #FFFFFF;
+    --cor-texto: #00008B;
+    --cor-botao: #87CEEB;
+    --cor-botao-hover: #4169E1;
+    --cor-link: #4169E1;
+    --cor-link-hover: #00008B;
+    --cor-cabecalho: #4169E1;
+    --cor-rodape: #00008B;
+  }
+  
+  /* Tema Escuro Suave */
+  [data-theme="dark-light"] {
+    --cor-fundo: #2C2C2C;
+    --cor-texto: #E0E0E0;
+    --cor-botao: #4C90B2;
+    --cor-botao-hover: #5D92D1;
+    --cor-link: #A3C2E0;
+    --cor-link-hover: #FFFFFF;
+    --cor-cabecalho: #333333;
+    --cor-rodape: #111111;
+  }
+  
+  /* Tema Escuro Intenso */
+  [data-theme="dark-deep"] {
+    --cor-fundo: #121212;
+    --cor-texto: #E0E0E0;
+    --cor-botao: #5A6E87;
+    --cor-botao-hover: #8E99A9;
+    --cor-link: #81A1C1;
+    --cor-link-hover: #BB86FC;
+    --cor-cabecalho: #1F1F1F;
+    --cor-rodape: #000000;
+  }
+  
+  /* Aplicando as variáveis aos elementos */
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--cor-cabecalho);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  button {
+    background-color: var(--cor-botao);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--cor-botao-hover);
+  }
+  
+  a {
+    color: var(--cor-link);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: var(--cor-link-hover);
+  }
+  
+  footer {
+    background-color: var(--cor-rodape);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site com Temas Escuros</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Meu Site com Temas Escuros</h1>
+    <button id="toggle-theme">Alternar Tema</button>
+  </header>
+
+  <main>
+    <p>Este é um exemplo de site com dois temas escuros: um mais suave e outro mais intenso.</p>
+    <button>Clique Aqui</button>
+    <p>Para saber mais, <a href="#">clique aqui</a>.</p>
+  </main>
+
+  <footer>
+    <p>Rodapé do Site</p>
+  </footer>
+
+  <script>
+    // Seleciona o botão de alternância de tema
+    const toggleThemeButton = document.getElementById('toggle-theme');
+
+    // Função para alternar entre os temas
+    toggleThemeButton.addEventListener('click', () => {
+      const currentTheme = document.body.getAttribute('data-theme');
+      
+      // Alterna entre os temas
+      if (currentTheme === 'dark-light') {
+        document.body.setAttribute('data-theme', 'dark-deep');
+      } else if (currentTheme === 'dark-deep') {
+        document.body.setAttribute('data-theme', 'dark-light');
+      } else {
+        document.body.setAttribute('data-theme', 'dark-light');
+      }
+    });
+  </script>
+</body>
+</html>
